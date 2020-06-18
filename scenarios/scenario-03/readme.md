@@ -1,5 +1,5 @@
 # Scenario 3
-In this section we will "dockerise" our application and run it locally. You have to have `docker` installed in your environment to accomplish this section - installation of docker is not in scope of this tutorial, please refere to https://docs.docker.com/get-docker/ for more details.
+In this section we will "dockerise" our application and run it locally. You have to have `docker` installed in your environment to accomplish this section - installation of docker is not in scope of this tutorial, please refer to https://docs.docker.com/get-docker/ for more details.
 
 ## Build Docker Image
 We will use the application that we've built in [Scenario 1](../scenario-01/readme.md)
@@ -42,11 +42,11 @@ REPOSITORY                       TAG                 IMAGE ID            CREATED
 springmusic                      latest              6e296a2dfd95        4 hours ago         163MB
 ```
 
-Well, let's run this image locally by issueing the following command:
+Well, let's start this image locally by running the following command:
 ```
 $ docker run -it -p 8080:8080 springmusic
 ```
-To check that it's running, run this comand:
+To check that it's up & running, run this command:
 ```
 $ docker ps
 ```
