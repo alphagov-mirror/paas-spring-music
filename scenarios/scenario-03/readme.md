@@ -1,5 +1,5 @@
 # Scenario 3
-In this section we will "dockerise" our application and run it locally. You have to have `docker` installed in your environment to accomplish this section - installation of docker is not in scope of this tutorial, please refer to https://docs.docker.com/get-docker/ for more details.
+In this section we will "dockerize" our application and run it locally. You have to have `docker` installed in your environment to accomplish this section - installation of docker is not in scope of this tutorial, please refer to https://docs.docker.com/get-docker/ for more details.
 
 ## Build Docker Image
 We will use the application that we've built in [Scenario 1](../scenario-01/readme.md)
