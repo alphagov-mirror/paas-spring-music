@@ -1,5 +1,5 @@
 # Scenario 2
-In this section we will deploy **spring-music** application to a Cloud Foundry and bind (e.g.: connect) to one or more persistence services. To accomplish this scenario you will require an access to a Cloud Foundry instance. To get and setup access to a Cloud Foundry instance is out of scope for this scenario.
+In this section we will deploy **spring-music** application to a Cloud Foundry and bind (e.g.: connect) to one or more persistence services. To accomplish this scenario you will require access to a Cloud Foundry instance. To get and setup access to a Cloud Foundry instance is out of scope for this scenario.
 
 We will use the application that we've built in [Scenario 1](../scenario-01/readme.md)
 
@@ -53,7 +53,7 @@ $ cf bind-service <app name> <service name>
 $ cf restart
 ~~~
 
-after deploying it to the cloudfoundry instance and binding it to a postgres db, this is how the app looks in my browser:
+after deploying it to the Cloud Foundry instance and binding it to a postgres db, this is how the app looks in my browser:
 ![](spring-music-with-db-on-cf.png)
 
 #### Changing bound services
