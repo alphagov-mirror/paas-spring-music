@@ -1,5 +1,5 @@
 # Scenario 4
-In this section we will deploy our dockerised application (that we created in scenario No.3) to Cloud Foundry instance and bind (e.g.: connect) it to one or more persistence services. To complete this scenario you will require an access to a Cloud Foundry instance and Docker Hub [optional].
+In this section we will deploy our dockerized application (that we created in scenario No.3) to Cloud Foundry instance and bind (e.g.: connect) it to one or more persistence services. To complete this scenario you will require access to a Cloud Foundry instance and Docker Hub [optional].
 *Getting access to a Cloud Foundry instance and Docker Hub is out of scope for this scenario.*
 
 
@@ -7,7 +7,7 @@ In this section we will deploy our dockerised application (that we created in sc
 There are quite a few things that we need to do before we can deploy our app to Cloud Foundry, so hang in there.
 
 ### Making sure that Docker Support is enabled.
-To verify that our target Cloud Foundry instance supports deployment of dockerised applications, issue the following command:
+To verify that our target Cloud Foundry instance supports deployment of dockerized applications, issue the following command:
 ```
 $ cf feature-flag diego_docker
 ```
@@ -16,7 +16,7 @@ The output should return:
 Features       State
 diego_docker   enabled
 ```
-If it's disabled, either enable it by issueing `cf enable-feature-flag diego_docker` command or ask your Clouf Foundry administrator to do it for you (in case you don't have permissions to do so).
+If it's disabled, either enable it by issuing `cf enable-feature-flag diego_docker` command or ask your Cloud Foundry administrator to do it for you (in case you don't have permissions to do so).
 
 ### Making sure that the docker image is in the Docker Hub.
 Cloud Foundry supports deploying applications from container registries such as Docker Hub, Google Container Registry (GSR) and Amazon Elastic Container Registry (ECR). In our example, we will be using Docker Hub registry (https://hub.docker.com/). For details about how to deploy applications from other container registries please look [here](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html).
@@ -66,9 +66,9 @@ To deploy the application as a docker image, we will be using the following comm
 cf push spring-music-docker --docker-image barsutka/springmusic --random-route -m 1024M
 ```
 
-*Note: we didn't use a manifest file as in the previous example (Scenario No.2), but we specified the same parateters (more or less) via command line.*
+*Note: we didn't use a manifest file as in the previous example (Scenario No.2), but we specified the same parameters (more or less) via command line.*
 
-Once application is up and running cloud foundry will publish the route to access this app. Here how it will look in a browser:
+Once the application is up and running, Cloud Foundry will publish the URL to access this app. Here how it will look in a browser:
 ![](spring-music-docker-cf.png)
 
 The following steps are the same as in Scenario No.2.
